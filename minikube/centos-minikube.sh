@@ -54,3 +54,5 @@ sudo chmod +x get-docker.sh
 ./get-docker.sh 
 
 sudo usermod -aG docker $USER && newgrp docker
+
+sudo systemctl start docker
