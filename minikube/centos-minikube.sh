@@ -14,17 +14,13 @@ sudo yum install apt-transport-https
 #With VirtualBox set up, move on to installing Minikube on your Ubuntu system.
 #1. First, download the latest Minikube binary using the wget command:
 
-wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 
-#2. Copy the downloaded file and store it into the /usr/local/bin/minikube directory with:
 
-sudo cp minikube-linux-amd64 /usr/local/bin/minikube
+ curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+ sudo install minikube-linux-amd64 /usr/local/bin/minikube
 
-#There will be no output if the command was executed correctly.
 
-#3. Next, give the file executive permission using the chmod command:
 
-sudo chmod 755 /usr/local/bin/minikube
 
 #4. Finally, verify you have successfully installed Minikube by checking the version of the software:
 
