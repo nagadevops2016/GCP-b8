@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: webappservice
+spec:
+  selector:
+    version: new
+  ports:
+    - name: http
+      port: 80
+      nodePort: 30180
+
+  type: NodePort 
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vishnu
+spec:
+  selector:
+    vishnu: app
+  ports:
+    - name: http
+      port: 80
+      nodePort: 30181
+
+  type: NodePort 
